@@ -12,26 +12,7 @@
 		18F5CB0E1F8590B6000416A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5CB0C1F8590B6000416A0 /* Main.storyboard */; };
 		18F5CB101F8590B6000416A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F5CB0F1F8590B6000416A0 /* Assets.xcassets */; };
 		18F5CB131F8590B6000416A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5CB111F8590B6000416A0 /* LaunchScreen.storyboard */; };
-		18F5CB1B1F85918E000416A0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5CB1A1F85918E000416A0 /* RxSwift.framework */; };
-		18F5CB1C1F85918E000416A0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5CB1A1F85918E000416A0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18F5CB1F1F8591A8000416A0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5CB1E1F8591A8000416A0 /* RxCocoa.framework */; };
-		18F5CB201F8591A8000416A0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5CB1E1F8591A8000416A0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		18F5CB1D1F85918E000416A0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18F5CB201F8591A8000416A0 /* RxCocoa.framework in Embed Frameworks */,
-				18F5CB1C1F85918E000416A0 /* RxSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18F5CB051F8590B6000416A0 /* LoginValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +22,6 @@
 		18F5CB0F1F8590B6000416A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F5CB121F8590B6000416A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F5CB141F8590B6000416A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18F5CB1A1F85918E000416A0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		18F5CB1E1F8591A8000416A0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F5CB1F1F8591A8000416A0 /* RxCocoa.framework in Frameworks */,
-				18F5CB1B1F85918E000416A0 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +38,6 @@
 		18F5CAFC1F8590B6000416A0 = {
 			isa = PBXGroup;
 			children = (
-				18F5CB1E1F8591A8000416A0 /* RxCocoa.framework */,
-				18F5CB1A1F85918E000416A0 /* RxSwift.framework */,
 				18F5CB071F8590B6000416A0 /* LoginValidation */,
 				18F5CB061F8590B6000416A0 /* Products */,
 			);
@@ -99,7 +74,6 @@
 				18F5CB011F8590B6000416A0 /* Sources */,
 				18F5CB021F8590B6000416A0 /* Frameworks */,
 				18F5CB031F8590B6000416A0 /* Resources */,
-				18F5CB1D1F85918E000416A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
