@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DB1D6C1F8596AE00C918C5 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB1D6B1F8596AD00C918C5 /* RxSwift.framework */; };
+		18DB1D6D1F8596AE00C918C5 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB1D6B1F8596AD00C918C5 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18DB1D701F8596CC00C918C5 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB1D6F1F8596CC00C918C5 /* RxCocoa.framework */; };
+		18DB1D711F8596CC00C918C5 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB1D6F1F8596CC00C918C5 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18F5CB091F8590B6000416A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CB081F8590B6000416A0 /* AppDelegate.swift */; };
 		18F5CB0B1F8590B6000416A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CB0A1F8590B6000416A0 /* ViewController.swift */; };
 		18F5CB0E1F8590B6000416A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5CB0C1F8590B6000416A0 /* Main.storyboard */; };
@@ -14,7 +18,24 @@
 		18F5CB131F8590B6000416A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5CB111F8590B6000416A0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18DB1D6E1F8596AE00C918C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18DB1D711F8596CC00C918C5 /* RxCocoa.framework in Embed Frameworks */,
+				18DB1D6D1F8596AE00C918C5 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18DB1D6B1F8596AD00C918C5 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		18DB1D6F1F8596CC00C918C5 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		18F5CB051F8590B6000416A0 /* LoginValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F5CB081F8590B6000416A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F5CB0A1F8590B6000416A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DB1D701F8596CC00C918C5 /* RxCocoa.framework in Frameworks */,
+				18DB1D6C1F8596AE00C918C5 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +61,8 @@
 		18F5CAFC1F8590B6000416A0 = {
 			isa = PBXGroup;
 			children = (
+				18DB1D6F1F8596CC00C918C5 /* RxCocoa.framework */,
+				18DB1D6B1F8596AD00C918C5 /* RxSwift.framework */,
 				18F5CB071F8590B6000416A0 /* LoginValidation */,
 				18F5CB061F8590B6000416A0 /* Products */,
 			);
@@ -74,6 +99,7 @@
 				18F5CB011F8590B6000416A0 /* Sources */,
 				18F5CB021F8590B6000416A0 /* Frameworks */,
 				18F5CB031F8590B6000416A0 /* Resources */,
+				18DB1D6E1F8596AE00C918C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
